@@ -5,6 +5,13 @@ import { initializeMainRoom, subscribeToAllPlayers, startGame } from './services
 import TeacherDashboard from './components/teacher/TeacherDashboard';
 import StudentApp from './components/student/StudentApp';
 
+const PRELOAD_IMAGES = [
+  '/image/00.png', '/image/m00.png', '/image/t01.png', '/image/01.png', '/image/s00.png',
+  '/image/n1.png', '/image/n2.png', '/image/n3.png',
+  '/image/d1.png', '/image/d2.png', '/image/d3.png',
+  '/image/c00.png', '/image/c01.png', '/image/c02.png', '/image/c03.png', '/image/c04.png'
+];
+
 const TeacherLanding = () => {
   const navigate = useNavigate();
   const [players, setPlayers] = useState([]);
@@ -91,6 +98,14 @@ const StudentLanding = () => {
 };
 
 function App() {
+  // Preload images globally on app start
+  useEffect(() => {
+    PRELOAD_IMAGES.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, []);
+
   return (
     <BrowserRouter>
       <Routes>
