@@ -1,6 +1,6 @@
 export const SCENARIOS = {
     prologue: {
-        teacherBackground: '/image/t01.png',
+        teacherBackground: '/image/t01.webp',
         teacherText: "歡迎來到醫院殺。\n生與死在這裡，只不過是報表上跳動的數字。\n當資源枯竭、人性被擠壓至極限，這座白色巨塔即將崩塌。\n今晚，你們每一個人都將成為推動崩潰的齒輪……",
         monologues: {
             "Admin": "你是副院長，你的使命很簡單，維持這家醫院的營運。\n不管是活人還是屍體，只要能把病床填滿，讓醫院撐下去就行。\n記住……這裡不需要多餘的仁慈，只需要完美的績效。",
@@ -9,10 +9,10 @@ export const SCENARIOS = {
             "Frontline Nurse": "拜託……救救我……我只是想活著下班！\n上面一直把人塞過來，根本做不完……我連自己剛剛發了什麼藥都不知道了！\n我的使命？我不知道！我需要這份工作，但也怕下一個過勞死的……就會是我！"
         },
         roleImages: {
-            "Admin": "/image/c01.png",
-            "ER Doctor": "/image/c02.png",
-            "Head Nurse": "/image/c03.png",
-            "Frontline Nurse": "/image/c04.png"
+            "Admin": "/image/c01.webp",
+            "ER Doctor": "/image/c02.webp",
+            "Head Nurse": "/image/c03.webp",
+            "Frontline Nurse": "/image/c04.webp"
         }
     },
     night1: {

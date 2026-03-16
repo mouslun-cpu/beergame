@@ -6,10 +6,10 @@ import TeacherDashboard from './components/teacher/TeacherDashboard';
 import StudentApp from './components/student/StudentApp';
 
 const PRELOAD_IMAGES = [
-  '/image/00.png', '/image/m00.png', '/image/t01.png', '/image/01.png', '/image/s00.png',
-  '/image/n1.png', '/image/n2.png', '/image/n3.png',
-  '/image/d1.png', '/image/d2.png', '/image/d3.png',
-  '/image/c00.png', '/image/c01.png', '/image/c02.png', '/image/c03.png', '/image/c04.png'
+  '/image/00.webp', '/image/m00.webp', '/image/t01.webp', '/image/s00.webp',
+  '/image/n1.webp', '/image/n2.webp', '/image/n3.webp',
+  '/image/d1.webp', '/image/d2.webp', '/image/d3.webp',
+  '/image/c00.webp', '/image/c01.webp', '/image/c02.webp', '/image/c03.webp', '/image/c04.webp'
 ];
 
 const TeacherLanding = () => {
@@ -44,7 +44,7 @@ const TeacherLanding = () => {
   };
 
   return (
-    <div className="teacher-layout bg-cover-center" style={{ backgroundImage: 'url(/image/00.png)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+    <div className="teacher-layout bg-cover-center" style={{ backgroundImage: 'url(/image/00.webp)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
       {/* Removed the dark semi-transparent box and title as requested */}
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-end', height: '100%', paddingBottom: '10vh' }}>
 
@@ -81,7 +81,7 @@ const StudentLanding = () => {
   }, []);
 
   return (
-    <div className="mobile-layout bg-cover-center" style={{ backgroundImage: 'url(/image/m00.png)', alignItems: 'center', justifyContent: 'flex-end', paddingBottom: '15vh' }}>
+    <div className="mobile-layout bg-cover-center" style={{ backgroundImage: 'url(/image/m00.webp)', alignItems: 'center', justifyContent: 'flex-end', paddingBottom: '15vh' }}>
       <button
         className="btn-primary"
         style={{ width: '80%', fontSize: '1.5rem', padding: '15px', letterSpacing: '4px', border: '1px solid #D32F2F', borderRadius: '4px', boxShadow: '0 4px 15px rgba(0,0,0,0.5)' }}

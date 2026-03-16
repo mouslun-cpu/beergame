@@ -112,11 +112,11 @@ const StudentApp = () => {
     const hasVoted = votes && votes[`night${gameDayValue}`];
 
     // Background image logic
-    let bgImage = (isLobby || isPrologue) ? 'url(/image/s00.png)' : 'url(/image/01.png)';
+    let bgImage = (isLobby || isPrologue) ? 'url(/image/s00.webp)' : 'url(/image/s00.webp)';
     if (currentDay >= 1) {
         const dayVal = Math.ceil(currentDay / 2);
         const isNight = currentDay % 2 !== 0;
-        bgImage = isNight ? `url(/image/n${dayVal}.png)` : `url(/image/d${dayVal}.png)`;
+        bgImage = isNight ? `url(/image/n${dayVal}.webp)` : `url(/image/d${dayVal}.webp)`;
     }
 
     const { activeRole } = roomState;

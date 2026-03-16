@@ -280,7 +280,7 @@ button:hover:not(:disabled) {
 }
 
 .card-back {
-  background-image: url('/image/c00.png');
+  background-image: url('/image/c00.webp');
 }
 
 .card-front {

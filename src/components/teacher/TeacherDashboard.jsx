@@ -39,13 +39,13 @@ const TeacherDashboard = () => {
     };
 
     // Determine background based on phase
-    let bgImage = 'url(/image/00.png)';
+    let bgImage = 'url(/image/00.webp)';
     if (roomState?.currentDay === 0.5) {
-        bgImage = 'url(/image/t01.png)';
+        bgImage = 'url(/image/t01.webp)';
     } else if (roomState?.currentDay >= 1) {
         const dayVal = Math.ceil(roomState.currentDay / 2);
         const isNight = roomState.currentDay % 2 !== 0;
-        bgImage = isNight ? `url(/image/n${dayVal}.png)` : `url(/image/d${dayVal}.png)`;
+        bgImage = isNight ? `url(/image/n${dayVal}.webp)` : `url(/image/d${dayVal}.webp)`;
     }
 
     return (
